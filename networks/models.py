@@ -11,13 +11,6 @@ class OriginCNN(object):
     self.loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
     # will add more properties
 
-  def obtain_cifar10(self):
-    # cifar10 is used for debugging
-    (train_images, self.train_labels), (test_images, self.test_labels) = datasets.cifar10.load_data()
-
-    # Normalize pixel values to be between 0 and 1
-    self.train_images, self.test_images = train_images / 255.0, test_images / 255.0
-
 
   def build(self):
     model = models.Sequential()
@@ -54,3 +47,9 @@ class OriginCNN(object):
     test_loss, test_acc = self.model.evaluate(test_images, test_labels, verbose=2)
 
     print(test_acc)
+
+class ResNet(object):
+  def __init__(self):
+    # do similiar thing
+    
+
