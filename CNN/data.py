@@ -12,7 +12,10 @@ class Cifar10(object):
 
     # Normalize pixel values to be between 0 and 1
     self.train_images, self.test_images = train_images / 255.0, test_images / 255.0
+    print(type(self.train_images))
+    # exit()
 
-class DR(object):
-    def __init__(self):
-    # load DR dataset
+# class DR(object):
+#     def __init__(self):
+#     # load DR dataset
+#     self.train_images

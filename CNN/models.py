@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow.keras import datasets, layers, models
 import matplotlib.pyplot as plt
 
-# https://www.tensorflow.org/tutorials/images/cnn
+# reference: https://www.tensorflow.org/tutorials/images/cnn
 
 class OriginCNN(object):
   """docstring for OriginCNN"""
@@ -13,6 +13,25 @@ class OriginCNN(object):
 
 
   def build(self):
+    model = models.Sequential()
+    model.add(layers.Conv2D(32, (3, 3), strides=(3,3), activation='relu', input_shape=(1000, 1000)))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(32, (3, 3), strides=(3,3), activation='relu'))
+    model.add(layers.MaxPooling2D((2, 2)))
+    model.add(layers.Conv2D(32, (3, 3), strides=(3,3), activation='relu'))
+    model.add(layers.MaxPooling2D((2, 2)))
+
+    model.add(layers.Flatten())
+    model.add(layers.Dense(32, activation='relu'))
+    model.add(layers.Dense(2))
+
+    model.summary()
+    model.compile(optimizer=self.optimizer,
+                loss=self.loss,
+                metrics=['accuracy'])
+    self.model = model
+
+  def build_cifar(self):
     model = models.Sequential()
     model.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(32, 32, 3)))
     model.add(layers.MaxPooling2D((2, 2)))
@@ -48,8 +67,8 @@ class OriginCNN(object):
 
     print(test_acc)
 
-class ResNet(object):
-  def __init__(self):
-    # do similiar thing
+# class ResNet(object):
+#   def __init__(self):
+#     # do similiar thing
     
 
