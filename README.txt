@@ -60,7 +60,25 @@ The following list associates each model with a timestamp:
   -Model Architecture: 3 layered CNN ---> SVM
 -21-04-2021 15:09:26
   -Dataset: Dataset consisting of only classes 0 and 4
+  -Model Architecture: Preprocessing --> 3 layered CNN ---> SVM
+-09-04-2021 20:50:32
+  -Dataset: Dataset consisting of only classes 0 and 4
   -Model Architecture: 3 layered CNN ---> SVM
+
+Resnet CNN Models:
+
+-22-04-2021 17:58:41
+  -Dataset: Subsection of given data with even class distribution
+  -Model Architecture: Preprocessing ---> Resnet ---> SVM
+-20-04-2021 23:46:49
+  -Dataset: Subsection of given data with even class distribution
+  -Model Architecture: Resnet ---> SVM
+-22-04-2021 14:43:41
+  -Dataset: Dataset consisting of only classes 0 and 4
+  -Model Architecture: Preprocessing -->  Resnet ---> SVM
+-20-04-2021 17:43:17
+  -Dataset: Dataset consisting of only classes 0 and 4
+  -Model Architecture: Resnet ---> SVM
 
 
 
