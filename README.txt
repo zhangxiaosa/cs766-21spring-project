@@ -43,7 +43,7 @@ This script was made to handle all the preprocessing for all the images. After t
   2. Adaptive Thresholding using 25 block size
   3. Resize image to 1000x1000 for uniformity 
   4. Normalize image to 0-1 for CNN
-Additionally, several iterations of this preprocessing are made, using only certain parts of the preprocessing as desired. Similarly, this script also includes a section made to extract only the 0 and 4 classes of the dataset to better distinguish in the CNN. 
+Additionally, several iterations of this preprocessing are made, using only certain parts of the preprocessing as desired. Similarly, this script also includes a section made to extract only the 0 and 4 classes of the dataset to better distinguish in the CNN. The output of this script is numpy files for each batch that can be directly sent to the CNN for training. 
 
 PerformSVM
 Author: Nick Chelales
