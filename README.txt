@@ -1,7 +1,7 @@
 
 README FILE
 
-Information regarding this course project can be found on the project website: INSERT COURSE PROJECT WEBSITE HERE
+Information regarding this course project can be found on the project website: https://dmshah4.wixsite.com/cs766project
 
 Functions/Notebooks:
 
