@@ -1,6 +1,7 @@
 
 README FILE
 
+Information regarding this course project can be found on the project website: INSERT COURSE PROJECT WEBSITE HERE
 
 Functions/Notebooks:
 
@@ -37,4 +38,37 @@ This script works similiar to ParseData, but creates evenly distributed datasets
 PerformSVM
 Author: Nick Chelales
 
-This script works by performing kernel based SVM on the given dataset (change path to perform on different dataset). The script performs 5-fold cross validation to determine the most optimal hyperparameters for kernel based SVM. In addition, it generates a classification report and confusion matrix for the given results. 
+This script works by performing kernel based SVM on the given dataset (change path to perform on different dataset). The script performs 5-fold cross validation to determine the most optimal hyperparameters for kernel based SVM. In addition, it generates a classification report and confusion matrix for the given results.
+
+
+SVMResults Folder:
+
+Each model iteration is associated with a particular timestamp, which matches the filenames of those files in the SVM Results folder. 
+The following list associates each model with a timestamp:
+
+
+3 Layered-CNN Models:
+
+-20-04-2021 00:49:35
+  -Dataset: Entire given dataset
+  -Model Architecture: Preprocessing ---> 3 layered CNN ---> SVM
+-16-04-2021 14:48:57
+  -Dataset: Subsection of given data with even class distribution
+  -Model Architecture: Preprocessing ---> 3 layered CNN ---> SVM
+-16-04-2021 00:41:45
+  -Dataset: Subsection of given data with even class distribution
+  -Model Architecture: 3 layered CNN ---> SVM
+-21-04-2021 15:09:26
+  -Dataset: Dataset consisting of only classes 0 and 4
+  -Model Architecture: 3 layered CNN ---> SVM
+
+
+
+
+
+
+
+
+
+
+
