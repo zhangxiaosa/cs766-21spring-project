@@ -26,3 +26,13 @@ Note that the Label information is also stored in a list, an each element is a 2
 A test batch is also created, in the same manner as the training batch.
 
 CAUTION-IMPORTANT: Because of the way the batches are created, the data in each batch is sorted by class (i.e. first 5000 or so values of each batch are class 0, then class 1 etc). It is recommended to shuffle the dataset once importing prior to performing training. 
+
+
+CreateEvenSets
+
+This script works similiar to ParseData, but creates evenly distributed datasets. 
+
+
+PerformSVM
+
+This script works by performing kernel based SVM on the given dataset (change path to perform on different dataset). The script performs 5-fold cross validation to determine the most optimal hyperparameters for kernel based SVM. In addition, it generates a classification report and confusion matrix for the given results. 
