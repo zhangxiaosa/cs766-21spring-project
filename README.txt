@@ -51,7 +51,7 @@ Author: Nick Chelales
 This script works by performing kernel based SVM on the given dataset (change path to perform on different dataset). The script performs 5-fold cross validation to determine the most optimal hyperparameters for kernel based SVM. In addition, it generates a classification report and confusion matrix for the given results.
 
 
-SVMResults Folder:
+************************************** RESULTS ******************************************************************************
 
 Each model iteration is associated with a particular timestamp, which matches the filenames of those files in the SVM Results folder. 
 The following list associates each model with a timestamp:
