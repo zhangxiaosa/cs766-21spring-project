@@ -29,10 +29,12 @@ CAUTION-IMPORTANT: Because of the way the batches are created, the data in each 
 
 
 CreateEvenSets
+Author: Nick Chelales
 
 This script works similiar to ParseData, but creates evenly distributed datasets. 
 
 
 PerformSVM
+Author: Nick Chelales
 
 This script works by performing kernel based SVM on the given dataset (change path to perform on different dataset). The script performs 5-fold cross validation to determine the most optimal hyperparameters for kernel based SVM. In addition, it generates a classification report and confusion matrix for the given results. 
